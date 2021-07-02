@@ -1,4 +1,7 @@
 когда в терминалие уже стоит путь к папке, которую сейчас хочу закинуть на гит
+
+ —оздание репозитори€ на https://github.com/  дл€ пуша файлов
+
 1.git init  - инициализаци€ проекта 
 
 ѕосле настройки √ита
@@ -9,4 +12,30 @@
  оманда Git status смотрит,  проверить в каком состо€неии находитс€ файл
 3. git add -A  ƒобавить все файлы, если хочу конкретно один файл добавить git add "название файла" (-A - all скорее всего)
 	 Git status - будет следить за этими файлами, после команды git add -A
-4. git commit  -a -m 
+4. git commit  -a -m"naming"
+5. git log посмотреть все логи коммитов на ветке 
+
+ѕосле создани€ репозитори€ 
+1. git remote add origin https://github.com/Komap/udemy-git.git    (remote add - добавление удаленного репозитори€, origin - название удаленного репозитори€)
+	 https://github.com/Komap/udemy-git.git это урл, который прописывааетс€ к этому репозиторию(локальному, что на компе)
+		ѕосле чего локальный(что на компе) репозиторий будет св€зан с удаленным (https://github.com/Komap/udemy-git.git)
+
+2.git push -u origin master  - пушит уже на удаленный репозиторий (origin - это скорее как переменна€ дл€ ссылки удаленного репозитори€/название)
+	-u все пуши с локалки на удаленку будут по умолчанию будут пушитс€ в origin master
+		master - название ветки
+
+
+
+
+
+
+
+ќтельно:
+ћожно создаить репозиторий таким способом 
+echo "# udemy-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Komap/udemy-git.git
+git push -u origin main
