@@ -1,0 +1,169 @@
+Git - https://github.com/Komap/
+БЭМ - https://www.youtube.com/watch?v=HihYQVuH64U
+Портфолио - https://freelancehunt.com/freelancer/Verizone.html#
+
+
+
+
+Горячие клавиши для приложений -  менять настройки на шестеренку в левом углу - Keyboard Shortcuts
+сниппеты - настройки на шестеренку в левом углу - User snippets и выбрать f.code-snippets - там же можно добавлять/редактировать
+https://snippet-generator.app  - генерирует правильный код для сниппетов!!!
+
+https://jonsuh.com/hamburgers/ - бургеры
+
+
+"eCSStractor" ctrl + shift + 2 ctrl + shift + 2 - копирует классы хтмл для простого css
+"eCSStractor" ctrl + shift + 3 ctrl + shift + 3 - копирует классы хтмл для SCSS
+
+"BEM Helper" alt + 1  alt + 2  - создает дочерние элементы БЭМ для хтмл
+
+"css navigation" - f12 перемещает в месте где прописан класс в стилях
+
+"live Sass Compiler" - ctrl shift P Settings JSON Настройки 
+
+
+https://habr.com/ru/post/490754/
+
+"Better comments" - можно использовать для комментов с подсветкой, перед коментом ставить " ! ? /
+
+
+https://ru.stackoverflow.com/questions/880604/live-sass-compiller-%D1%80%D0%B0%D1%81%D1%88%D0%B8%D1%80%D0%B5%D0%BD%D0%B8%D0%B5-%D0%B2-vs-code
+
+Настройки по GIT  ===========================================
+
+*При создании новой ветки
+echo "# testing" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Komap/testing.git
+git push -u origin main
+
+…or push an existing repository from the command line
+ИЛИ
+*При создании новой ветки
+git remote add origin https://github.com/Komap/testing.git
+git branch -M main
+git push -u origin main
+
+*При пуше существующей ветки 
+git status - проверить в каком состоянеии находится файл
+git add тут название файла который нужно запушить
+git add -A все файлы
+git commit -m "first commit"
+git push
+
+
+
+
+Snippets  ========================================================================
+
+
+
+
+		"Print to console": {
+		"scope": "javascript,typescript",
+		"prefix": "log",
+		"body": [
+			"console.log('$1');",
+			"$2" // положение курсора
+		],
+		"description": "Log output to console"
+	},
+	"select element": {
+		"prefix": "jssel",
+		"body": [
+			"const element = document.querySelector('.element');"
+		],
+		"description": "select element"
+	},
+	"function arrow": {
+		"prefix": "jsfunkarr",
+		"body": [
+			"const func = () => {",
+			"    return;",
+			"}"
+		],
+		"description": "function arrow"
+	},
+	"function": {
+		"prefix": "jsfunk",
+		"body": [
+			"func newfun(){",
+			"    return;",
+			"}"
+		],
+		"description": "function arrow"
+	},
+	"for": {
+		"prefix": "jsfor",
+		"body": [
+			"for(let i = 0; i<=arr.length; i++){",
+			"    sum = arr[i];",
+			"}",
+			""
+		],
+		"description": "for"
+	},
+	//CSS snippets
+	"отступ по центру": {
+		"prefix": "cssmar",
+		"body": [
+			"margin: 0 auto;",
+		],
+		"description": "Log output to console"
+	},
+	"dflex+justify-content": {
+		"prefix": "cssflex",
+		"body": [
+			"display: flex;",
+			"justify-content: space-between;",
+			"align-items: center;",
+			"align-self: center;",
+		],
+		"description": ""
+	},
+	"grid": {
+		"prefix": "cssgrid",
+		"body": [
+			"display: grid;",
+			"grid-template-columns: repeat(auto-fit,minmax(240px,1fr));",
+			"grid-row-gap: 30px;",
+			"grid-column-gap: 10px;"
+		],
+		"description": "grid"
+	},
+	//HTML snippets
+	"bootstrap section": {
+		"prefix": "hsection",
+		"body": [
+			"<section class=\"class\">",
+			"        <div class=\"container\">",
+			"            <div class=\"row\">$1</div>",
+			"        </div>",
+			"    </section>"
+		],
+		"description": ""
+	},
+	"button": {
+		"prefix": "newbut",
+		"body": [
+			"<button type=\"button\" class=\"\"></button>"
+		],
+		"description": "button"
+	},
+	"form": {
+		"prefix": "hform",
+		"body": [
+			"<form action=\"\" class=\"form\">",
+			"        <input type=\"text\" class=\"\">",
+			"        <input type=\"text\" class=\"\">",
+			"        <input type=\"text\" class=\"\">",
+			"        <textarea name=\"\" id=\"\" class=\"\"></textarea>",
+			"        <button type=\"button\" class=\"\"></button>",
+			" </form>"
+		],
+		"description": "form"
+	},
+}
