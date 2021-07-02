@@ -1,0 +1,40 @@
+когда в терминалие уже стоит путь к папке, которую сейчас хочу закинуть на гит
+
+ Создание репозитория на https://github.com/  для пуша файлов
+Настройки
+1.git init  - инициализация проекта 
+2. git config -- local user.name "Invok"   - установка локального гита
+ 2.1.  Если первая установка гита на комп, нужно это сделать ГЛОБАЛЬНО 
+	git config -- global user.name "Invok"   - установка локального гита
+После настройки Гита
+
+Команда Git status смотрит,  проверить в каком состоянеии находится файл
+3. git add -A  Добавить все файлы, если хочу конкретно один файл добавить git add "название файла" (-A - all скорее всего)
+	 Git status - будет следить за этими файлами, после команды git add -A
+4. git commit  -a -m"naming"
+5. git log посмотреть все логи коммитов на ветке 
+
+После создания репозитория 
+1. git remote add origin https://github.com/Komap/udemy-git.git    (remote add - добавление удаленного репозитория, origin - название удаленного репозитория)
+	 https://github.com/Komap/udemy-git.git это урл, который прописываается к этому репозиторию(локальному, что на компе)
+		После чего локальный(что на компе) репозиторий будет связан с удаленным (https://github.com/Komap/udemy-git.git)
+
+2.git push -u origin master  - пушит уже на удаленный репозиторий (origin - это скорее как переменная для ссылки удаленного репозитория/название)
+	-u все пуши с локалки на удаленку будут по умолчанию будут пушится в origin master
+		master - название ветки
+
+
+
+
+
+
+
+Отельно:
+Можно создаить репозиторий таким способом 
+echo "# udemy-git" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Komap/udemy-git.git
+git push -u origin main
