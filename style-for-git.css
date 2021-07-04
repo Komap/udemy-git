@@ -14,4 +14,5 @@
     border:1px solid;
     background-color: aqua;
     margin: 0 5px;
+	min-height: 300px;
 }
